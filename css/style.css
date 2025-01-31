@@ -18,4 +18,7 @@ button {
 .primary-heading {
   font-size: clamp(1.875rem, 3.25vw + 0.575rem, 3.5rem);
 }
+.section-heading {
+  font-size: clamp(1.5rem, 1.5vw + 0.9rem, 2.25rem);
+}
 /* ---------------------- default style end ---------------------- */
