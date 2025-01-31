@@ -1,0 +1,21 @@
+/* ---------------------- default style start ---------------------- */
+@import url("https://fonts.googleapis.com/css2?family=ADLaM+Display&family=Sora:wght@100..800&display=swap");
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "ADLaM Display", serif;
+}
+p,
+a,
+span,
+li,
+button {
+  font-family: "Sora", sans-serif;
+}
+.primary-heading {
+  font-size: clamp(1.875rem, 3.25vw + 0.575rem, 3.5rem);
+}
+/* ---------------------- default style end ---------------------- */
