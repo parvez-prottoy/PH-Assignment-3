@@ -24,6 +24,8 @@
           backgroundImage: {
             banner: "url('assets/cat-big.png')",
             dogBg: "url('assets/cute-pet-small.png')",
+            petBg: "url('assets/cute-dog-mid.png')",
+            dogBgLg: "url('assets/cute-pet-mid.png')",
           },
           fontFamily: {
             sans: ["Sora", "sans-serif"],
@@ -376,6 +378,46 @@
         </div>
       </section>
       <!------------------- products section end ------------------->
+      <!------------------- price section start ------------------->
+      <section class="my-12 lg:my-32">
+        <div class="container">
+          <div class="mb-9 md:mb-12">
+            <h2 class="section-heading text-indigo">Everyday low Price</h2>
+          </div>
+          <!-- price-cards -->
+          <div class="grid grid-cols-1 lg:grid-cols-10 gap-6">
+            <div
+              class="col-span-1 lg:col-span-6 bg-gradient-to-t from-indigo to-water rounded-md text-white"
+            >
+              <div
+                class="w-full h-full bg-petBg bg-no-repeat bg-right bg-contain rounded-md"
+              >
+                <div class="px-20 py-36">
+                  <p class="text-grey">Under Price</p>
+                  <h3 class="card-heading">Pet Grooming Mitt</h3>
+                  <h4 class="text-xl text-grey">(Easy Hair Removal)</h4>
+                  <h1 class="primary-heading">$7.99</h1>
+                </div>
+              </div>
+            </div>
+            <div
+              class="col-span-1 lg:col-span-4 relative bg-gradient-to-t from-water to-indigo rounded-md text-white"
+            >
+              <div
+                class="w-full h-full bg-dogBgLg bg-no-repeat bg-right rounded-md border"
+              >
+                <div class="px-20 py-36">
+                  <p class="text-grey">Under Price</p>
+                  <h3 class="card-heading">Pet Grooming Mitt</h3>
+                  <h4 class="text-xl text-grey">(Easy Hair Removal)</h4>
+                  <h1 class="primary-heading">$7.99</h1>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!------------------- price section end ------------------->
     </main>
   </body>
 </html>
