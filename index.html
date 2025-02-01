@@ -26,6 +26,7 @@
             dogBg: "url('assets/cute-pet-small.png')",
             petBg: "url('assets/cute-dog-mid.png')",
             dogBgLg: "url('assets/cute-pet-mid.png')",
+            sliderBg: "url('assets/blog-line-mask-image.png')",
           },
           fontFamily: {
             sans: ["Sora", "sans-serif"],
@@ -40,6 +41,7 @@
               indigo: "#1d256b",
               grey: "#585858",
               water: "#D1FAFF",
+              almond: "#F1E4CD",
             },
           },
         },
@@ -53,7 +55,7 @@
         <nav class="flex justify-between items-center text-white">
           <div class="flex items-center gap-2 card-heading cursor-pointer">
             <img class="w-[48px] h-[48px]" src="assets/logo.svg" alt="" />
-            <h3 class="">Pet Zone</h3>
+            <h3 class="hidden md:block">Pet Zone</h3>
           </div>
           <div class="hidden lg:block">
             <ul class="flex items-center gap-6">
@@ -97,20 +99,23 @@
       <!------------------- banner section start ------------------->
       <section>
         <div
-          class="container w-full h-[40vh] md:h-[50vh] lg:h-[70vh] bg-banner bg-no-repeat bg-contain bg-bottom"
+          class="relative container w-full h-[45vh] lg:h-[85vh] bg-banner bg-no-repeat bg-contain bg-right-bottom md:pt-4 lg:pt-10 z-10"
         >
-          <h1 class="primary-heading text-indigo capitalize">
+          <h1 class="primary-heading capitalize color-change">
             Pamper Your Pet, <br />
             Because They Deserve <br />
             the Bes
           </h1>
-          <p class="w-[70%] md:w-[75%] lg:w-1/3 text-gray mt-4 mb-6">
+          <p class="w-[74%] md:w-[75%] lg:w-1/3 text-gray mt-4 mb-6">
             Discover a world of treats, toys, and essentials handpicked for your
             furry friends. Shop now and make tails wag with joy!
           </p>
           <button class="btn bg-indigo text-white px-7 py-3 hover:bg-indigo/80">
             Find a pet
           </button>
+          <span
+            class="w-full h-full absolute top-0 left-0 bg-sliderBg bg-no-repeat -z-10"
+          ></span>
         </div>
       </section>
       <!------------------- banner section end ------------------->
@@ -404,7 +409,9 @@
                 <p>$39.99</p>
               </div>
             </div>
-            <div class="flex items-center gap-4 bg-water rounded-md p-4">
+            <div
+              class="hidden md:flex items-center gap-4 bg-water rounded-md p-4"
+            >
               <div
                 class="w-[86px] h-[86px] bg-[#f1feff] rounded-md flex justify-center items-center"
               >
@@ -438,9 +445,9 @@
               class="col-span-1 lg:col-span-6 bg-gradient-to-t from-indigo to-water rounded-md text-white"
             >
               <div
-                class="w-full h-full bg-petBg bg-no-repeat bg-right bg-contain rounded-md"
+                class="w-full h-full bg-petBg bg-no-repeat bg-right-bottom bg-contain rounded-md"
               >
-                <div class="px-20 py-36">
+                <div class="px-14 md:px-20 py-36">
                   <p class="text-grey">Under Price</p>
                   <h3 class="card-heading">Pet Grooming Mitt</h3>
                   <h4 class="text-xl text-grey">(Easy Hair Removal)</h4>
@@ -452,7 +459,7 @@
               class="col-span-1 lg:col-span-4 relative bg-gradient-to-t from-water to-indigo rounded-md text-white"
             >
               <div
-                class="w-full h-full bg-dogBgLg bg-no-repeat bg-right rounded-md border"
+                class="w-full h-full bg-dogBgLg bg-no-repeat bg-right-bottom rounded-md border"
               >
                 <div class="px-20 py-36">
                   <p class="text-grey">Under Price</p>
@@ -466,6 +473,95 @@
         </div>
       </section>
       <!------------------- price section end ------------------->
+      <!------------------- testimonial section start ------------------->
+      <!------------------- testimonial section start ------------------->
+      <!------------------- faq section start ------------------->
+      <section class="mt-12 lg:mt-32">
+        <div class="container">
+          <div class="mb-9 md:mb-12">
+            <h2 class="section-heading text-indigo">FAQ</h2>
+          </div>
+          <div class="flex flex-col items-center lg:flex-row gap-10">
+            <div class="flex-1 space-y-4">
+              <div class="collapse collapse-plus bg-almond px-4 py-2">
+                <input type="radio" name="my-accordion-3" checked="checked" />
+                <div class="collapse-title text-indigo text-xl font-semibold">
+                  1. Which symptoms might indicate an allergy in my dog?
+                </div>
+                <div class="collapse-content">
+                  <p>
+                    Allergies are common in dogs—in fact, they are one of the
+                    top reasons for veterinary appointments. Dog allergy
+                    symptoms most commonly affect the skin and ears.
+                  </p>
+                </div>
+              </div>
+              <div class="collapse collapse-plus bg-almond px-4 py-2">
+                <input type="radio" name="my-accordion-3" />
+                <div class="collapse-title text-indigo text-xl font-semibold">
+                  2. How often should I bathe my pet?
+                </div>
+                <div class="collapse-content">
+                  <p>
+                    In general, most dogs can be bathed once a month, but there
+                    are a few important factors that may necessitate more- or
+                    less-frequent baths, depending on your individual pet.
+                  </p>
+                </div>
+              </div>
+              <div class="collapse collapse-plus bg-almond px-4 py-2">
+                <input type="radio" name="my-accordion-3" />
+                <div class="collapse-title text-indigo text-xl font-semibold">
+                  3. How can I keep my cat from getting hairballs?
+                </div>
+                <div class="collapse-content">
+                  <p>
+                    Brush your cat regularly Brush your cat daily to remove
+                    loose hair before they swallow it. This is especially
+                    important for cats with long or medium-length fur. Feed your
+                    cat hairball food Hairball food is specially formulated to
+                    help your cat pass hairballs through their digestive system.
+                    You can feed it to your cat as their sole diet.
+                  </p>
+                </div>
+              </div>
+              <div class="collapse collapse-plus bg-almond px-4 py-2">
+                <input type="radio" name="my-accordion-3" />
+                <div class="collapse-title text-indigo text-xl font-semibold">
+                  4. How often should my aquarium's water be changed?
+                </div>
+                <div class="collapse-content">
+                  <p>
+                    For most aquariums, a good rule of thumb is to change 10-25%
+                    of the water every 1-2 weeks; this means performing a
+                    partial water change regularly to maintain water quality and
+                    prevent buildup of waste products.
+                  </p>
+                </div>
+              </div>
+              <div class="collapse collapse-plus bg-almond px-4 py-2">
+                <input type="radio" name="my-accordion-3" />
+                <div class="collapse-title text-indigo text-xl font-semibold">
+                  5. If my fish seems unwell, what should I do?
+                </div>
+                <div class="collapse-content">
+                  <p>
+                    Check the water: Poor water quality is the most common cause
+                    of fish illness. Check the water quality and fix it if
+                    needed. Separate the fish: If possible, move the sick fish
+                    to a quarantine tank. This will prevent other fish from
+                    getting sick.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="flex-1 h-full">
+              <img class="rounded-md" src="assets/faq.jpg" alt="faq image" />
+            </div>
+          </div>
+        </div>
+      </section>
+      <!------------------- faq section end ------------------->
       <!------------------- newsletter section start ------------------->
       <section class="translate-y-40 md:translate-y-48 -mt-16">
         <div class="container">

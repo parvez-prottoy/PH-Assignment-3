@@ -25,3 +25,20 @@ button {
   font-size: clamp(1.375rem, 1.25vw + 0.875rem, 2rem);
 }
 /* ---------------------- default style end ---------------------- */
+/* ---------------------- animation style start ---------------------- */
+.color-change {
+  animation: color-change 2s ease-out infinite alternate both;
+}
+@keyframes color-change {
+  0% {
+    color: #1d256b;
+  }
+  50% {
+    color: #1111;
+  }
+  100% {
+    color: #585858;
+  }
+}
+
+/* ---------------------- animation style end ---------------------- */
