@@ -50,7 +50,7 @@
   </head>
   <body>
     <!------------------- header section start ------------------->
-    <header class="h-[8vh] flex items-center bg-indigo">
+    <header class="h-[8vh] flex items-center bg-indigo z-20">
       <div class="container">
         <nav class="flex justify-between items-center text-white">
           <div class="flex items-center gap-2 card-heading cursor-pointer">
@@ -84,7 +84,7 @@
             </div>
             <ul
               tabindex="0"
-              class="dropdown-content menu bg-base-100 text-indigo rounded-box z-[1] w-52 p-2 shadow font-semibold"
+              class="dropdown-content menu bg-base-100 text-indigo rounded-box z-30 w-52 p-2 shadow font-semibold"
             >
               <li><a href="#">Find a pet</a></li>
               <li><a href="#">Breeds</a></li>
@@ -97,9 +97,9 @@
     <!------------------- header section end ------------------->
     <main>
       <!------------------- banner section start ------------------->
-      <section>
+      <section class="-z-20">
         <div
-          class="relative container w-full h-[45vh] lg:h-[85vh] bg-banner bg-no-repeat bg-contain bg-right-bottom md:pt-4 lg:pt-10 z-10"
+          class="relative container w-full h-[45vh] lg:h-[85vh] bg-banner bg-no-repeat bg-contain bg-right-bottom pt-4 lg:pt-10 z-10"
         >
           <h1 class="primary-heading capitalize color-change">
             Pamper Your Pet, <br />
@@ -448,9 +448,11 @@
                 class="w-full h-full bg-petBg bg-no-repeat bg-right-bottom bg-contain rounded-md"
               >
                 <div class="px-14 md:px-20 py-36">
-                  <p class="text-grey">Under Price</p>
+                  <p class="text-grey hidden md:block">Under Price</p>
                   <h3 class="card-heading">Pet Grooming Mitt</h3>
-                  <h4 class="text-xl text-grey">(Easy Hair Removal)</h4>
+                  <h4 class="text-xl text-grey hidden md:block">
+                    (Easy Hair Removal)
+                  </h4>
                   <h1 class="primary-heading">$7.99</h1>
                 </div>
               </div>
@@ -462,9 +464,8 @@
                 class="w-full h-full bg-dogBgLg bg-no-repeat bg-right-bottom rounded-md border"
               >
                 <div class="px-20 py-36">
-                  <p class="text-grey">Under Price</p>
-                  <h3 class="card-heading">Pet Grooming Mitt</h3>
-                  <h4 class="text-xl text-grey">(Easy Hair Removal)</h4>
+                  <h3 class="card-heading">Pet T-Shirt</h3>
+
                   <h1 class="primary-heading">$7.99</h1>
                 </div>
               </div>
@@ -473,8 +474,6 @@
         </div>
       </section>
       <!------------------- price section end ------------------->
-      <!------------------- testimonial section start ------------------->
-      <!------------------- testimonial section start ------------------->
       <!------------------- faq section start ------------------->
       <section class="mt-12 lg:mt-32">
         <div class="container">
