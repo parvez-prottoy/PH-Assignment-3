@@ -47,6 +47,52 @@
     </script>
   </head>
   <body>
+    <!------------------- header section start ------------------->
+    <header class="h-[8vh] flex items-center bg-indigo">
+      <div class="container">
+        <nav class="flex justify-between items-center text-white">
+          <div class="flex items-center gap-2 card-heading cursor-pointer">
+            <img class="w-[48px] h-[48px]" src="assets/logo.svg" alt="" />
+            <h3 class="">Pet Zone</h3>
+          </div>
+          <div class="hidden lg:block">
+            <ul class="flex items-center gap-6">
+              <li><a href="#">Find a pet</a></li>
+              <li><a href="#">Breeds</a></li>
+              <li><a href="#">Contact Us</a></li>
+            </ul>
+          </div>
+          <div class="hidden md:flex items-center gap-6">
+            <div class="flex items-center gap-4">
+              <i class="ri-notification-2-line text-2xl cursor-pointer"></i>
+              <i class="ri-search-2-line text-2xl cursor-pointer"></i>
+              <button
+                class="btn bg-transparent text-white border-water px-7 py-3 hover:bg-indigo/80"
+              >
+                Login
+              </button>
+              <button class="btn bg-water px-7 py-3 hover:bg-water/80">
+                Register
+              </button>
+            </div>
+          </div>
+          <div class="block md:hidden dropdown dropdown-end">
+            <div tabindex="0" role="button">
+              <i class="ri-menu-3-line text-3xl"></i>
+            </div>
+            <ul
+              tabindex="0"
+              class="dropdown-content menu bg-base-100 text-indigo rounded-box z-[1] w-52 p-2 shadow font-semibold"
+            >
+              <li><a href="#">Find a pet</a></li>
+              <li><a href="#">Breeds</a></li>
+              <li><a href="#">Contact Us</a></li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <!------------------- header section end ------------------->
     <main>
       <!------------------- banner section start ------------------->
       <section>
